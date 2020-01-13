@@ -9,7 +9,7 @@ pp directors_database
 def gross_for_director(director_data)
   total_gross = 0
   for movie in movies do
-    total_gross += movie
+    total_gross += movie[:worldwide_gross]
   end
   total_gross
 end
