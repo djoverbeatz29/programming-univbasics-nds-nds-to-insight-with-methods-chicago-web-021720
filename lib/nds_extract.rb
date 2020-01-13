@@ -8,7 +8,7 @@ pp directors_database
 # using director_data as input
 def gross_for_director(director_data)
   total_gross = 0
-  for movie in movies do
+  for movie in director_data[:movies] do
     total_gross += movie[:worldwide_gross]
   end
   total_gross
